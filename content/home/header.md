@@ -51,6 +51,9 @@ title = "End-to-end Bayesian learning"
 #   label = '<a class="js-github-release" href="https://sourcethemes.com/academic/updates" data-repo="gcushen/hugo-academic">Latest release<!-- V --></a>'
 +++
 
-**25-29th of October, 2021, CIRM, Marseille**
+*International conference* 
+
+25-29th of October 2021, 
+CIRM, Marseille
 
 

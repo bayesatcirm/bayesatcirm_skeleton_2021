@@ -8,12 +8,12 @@ active = true  # Activate this widget? true/false
 weight = 20  # Order that this section will appear.
 
 title = "Speakers"
-subtitle = "2 mini-courses (1h30) and 6 invited speakers (1h)"
+subtitle = "2 master classes (2 x 1h30) and 6 invited speakers (1h)"
 
 [content]
   # Choose which groups/teams of users to display.
   #   Edit `user_groups` in each user's profile to add them to one or more of these groups.
-  user_groups = ["Mini-courses",
+  user_groups = ["Master classes",
                  "Invited speakers"]
 
 [design]

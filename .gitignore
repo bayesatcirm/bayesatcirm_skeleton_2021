@@ -47,3 +47,4 @@ po/*~
 # blogdown default build site
 
 public/
+.Rproj.user

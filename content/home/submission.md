@@ -8,7 +8,7 @@ headless = false  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
-title = "Important dates"
+title = "Abstract submission and registration"
 subtitle = ""
 
 [design]
@@ -50,7 +50,7 @@ subtitle = ""
  css_class = ""
 +++
 
-- **Call for contribution:**  October 2020
-- **Abstract submission deadline:**  March 15, 2021
-- **Acceptance notification:**  April 15, 2021
-- **Deadline for the inscription:**  June 15, 2020
+The abstract submission procedure is [done here](www.blabliblablo.com).
+
+The registration procedure is [done here](www.blabliblablo.com).
+

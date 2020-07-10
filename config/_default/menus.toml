@@ -17,11 +17,21 @@
   name = "Speakers"
   url = "#speakers"
   weight = 20
+
+[[main]]
+  name = "Program"
+  url = "#program"
+  weight = 30
+
+[[main]]
+  name = "Abstract submission/registration"
+  url = "#submission"
+  weight = 40
   
 [[main]]
   name = "Important dates"
   url = "#important_dates"
-  weight = 30
+  weight = 50
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
