@@ -8,8 +8,8 @@ headless = false  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 60  # Order that this section will appear.
 
-title = "Comitees"
-subtitle = "Organization and scientific comitees"
+title = "Committees"
+subtitle = ""
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -50,16 +50,19 @@ subtitle = "Organization and scientific comitees"
  css_class = ""
 +++
 
-- Scientific comitee
+- Scientific committee
   - [Pierre Alquier](https://pierrealquier.github.io)
   - [Nial Friel](https://maths.ucd.ie/~nial/)
   - [Jean-Michel Marin](https://imag.umontpellier.fr/~marin/)
   - [Kerrie Mengersen](https://staff.qut.edu.au/staff/k.mengersen)
   - [Stéphane Robin](https://www6.inrae.fr/mia-paris/Equipes/Membres/Stephane-Robin)
 
-- Organizing comitee
+- Organizing committee
+  - [Nicolas Chopin](https://sites.google.com/site/nicolaschopinstatistician/)
   - [Alice Cleynen](https://www.alice-cleynen.menopresto.net/)
+  - [Sophie Donnet](https://www6.inrae.fr/mia-paris/Equipes/Membres/Sophie-Donnet)
   - [Pierre Gloaguen](https://papayoun.github.io)
   - [Sylvain Le Corff](https://sylvainlc.github.io/)
   - [Antonietta Mira](https://search.usi.ch/en/people/f8960de6d60dd08a79b6c1eb20b7442b/mira-antonietta)
+  - [Angelina Roche](https://www.ceremade.dauphine.fr/~roche/)
   - [Julien Stoehr](https://www.ceremade.dauphine.fr/~stoehr/)
