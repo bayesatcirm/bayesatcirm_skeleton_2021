@@ -1,0 +1,183 @@
++++
+# A Demo section created with the Blank widget.
+# Any elements can be added in the body: https://sourcethemes.com/academic/docs/writing-markdown-latex/
+# Add more sections by duplicating this file and customizing to your requirements.
+
+widget = "blank"  # See https://sourcethemes.com/academic/docs/page-builder/
+headless = false  # This file represents a page section.
+active = true  # Activate this widget? true/false
+weight = 30  # Order that this section will appear.
+
+title = "Detailed program"
+subtitle = ""
+
+[design]
+  # Choose how many columns the section has. Valid values: 1 or 2.
+  columns = "1"
+
+[design.background]
+  # Apply a background color, gradient, or image.
+  #   Uncomment (by removing `#`) an option to apply it.
+  #   Choose a light or dark text color by setting `text_color_light`.
+  #   Any HTML color name or Hex value is valid.
+
+  # Background color.
+  # color = "navy"
+  
+  # Background gradient.
+  # gradient_start = "DeepSkyBlue"
+  # gradient_end = "SkyBlue"
+  
+  # Background image.
+  # image = "headers/bubbles-wide.jpg"  # Name of image in `static/img/`.
+  # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+  # image_size = "cover"  #  Options are `cover` (default), `contain`, or `actual` size.
+  # image_position = "center"  # Options include `left`, `center` (default), or `right`.
+  # image_parallax = true  # Use a fun parallax-like fixed background effect? true/false
+
+  # Text color (true=light or false=dark).
+  # text_color_light = true
+
+[design.spacing]
+  # Customize the section spacing. Order is top, right, bottom, left.
+  padding = ["20px", "0", "20px", "0"]
+
+[advanced]
+ # Custom CSS. 
+ css_style = ""
+ 
+ # CSS class.
+ css_class = ""
++++
+
+<!-- # Date format for experience -->
+<!-- #   Refer to https://sourcethemes.com/academic/docs/customization/#date-format -->
+<!-- date_format = "Jan 2, 2006" -->
+
+<!-- # Experiences. -->
+<!-- #   Add/remove as many `[[experience]]` blocks below as you like. -->
+<!-- #   Required fields are `title`, `company`, and `date_start`. -->
+<!-- #   Leave `date_end` empty if it's your current employer. -->
+<!-- #   Begin/end multi-line descriptions with 3 quotes `"""`. -->
+<!-- [[experience]] -->
+<!--   title = "Monday" -->
+<!--   # company = "GenCoin" -->
+<!--   # company_url = "" -->
+<!--   # location = "California" -->
+<!--   date_start = "2021-10-25" -->
+<!--   date_end = "" -->
+<!--   description = """ -->
+
+```{r utils, echo = FALSE, message = FALSE}
+library(tidyverse)
+library(kableExtra)
+my_palette <- spec_color(1:4, end = 0.9, option = "A", direction = -1)
+get_color <- function(vec){
+  sapply(vec, function(x) 
+    if(x == "Master Class")
+      return(my_palette[1])
+    else if(x == "Invited talk")
+      return(my_palette[2])
+    else if(x == "Break")
+      return(my_palette[4])
+    else
+      return(my_palette[3]))
+}
+```
+
+
+## (It's got to be) Monday
+
+```{r tableau_lundi, message = FALSE, eval = TRUE, echo = FALSE}
+lundi <- data.frame(creneau = c("9h-10h30", "10h30-11h", 
+                                "11h-11h30", "11h30-12h",  
+                                "12h30-14h", "14h-15h", 
+                                "15h-15h30", "15h30-16h",
+                                "16h-16h30", "17h-17h30"),
+                    talk_type = c("Master Class", "Break", 
+                             "Contributed talk", "Contributed talk",
+                             "Break", "Invited talk",
+                             "Contributed talk", "Contributed talk",
+                             "Break", "Invited talk"),
+                    Speaker = c("TBA", "",
+                                "TBA", "TBA",
+                                "", "TBA",
+                                "TBA", "TBA",
+                                "", "TBA"),
+                    Title = c("To be announced"),
+                    Abstract = c("[Disponible ici](https://media1.tenor.com/images/618c6321f547133ca86ae55276c915d7/tenor.gif?itemid=15763066)"))
+lundi %>%  
+    mutate(talk_type = cell_spec(
+      talk_type, color = "white", bold = T,
+      background = get_color(talk_type)
+    )) %>% 
+  kableExtra::kbl(escape = FALSE,
+             col.names = c("", "", "Speaker", "Title", "Abstract")) %>%
+  kable_classic("striped")
+```
+
+## (Hooray for) Tuesday 
+
+```{r mardi, echo = FALSE}
+mardi <- lundi
+mardi %>%  
+    mutate(talk_type = cell_spec(
+      talk_type, color = "white", bold = T,
+      background = get_color(talk_type)
+    )) %>% 
+  kableExtra::kbl(escape = FALSE,
+             col.names = c("", "", "Speaker", "Title", "Abstract")) %>%
+  kable_classic("striped")
+```
+
+## (Waiting for) Wednesday
+
+```{r mercredi, echo = FALSE}
+mercredi <- lundi
+mercredi %>%  
+    mutate(talk_type = cell_spec(
+      talk_type, color = "white", bold = T,
+      background = get_color(talk_type)
+    )) %>% 
+  kableExtra::kbl(escape = FALSE,
+             col.names = c("", "", "Speaker", "Title", "Abstract")) %>%
+  kable_classic("striped")
+```
+
+## (Sweet) Thursday
+
+```{r jeudi, echo = FALSE}
+jeudi <- lundi
+jeudi %>%  
+    mutate(talk_type = cell_spec(
+      talk_type, color = "white", bold = T,
+      background = get_color(talk_type)
+    )) %>% 
+  kableExtra::kbl(escape = FALSE,
+             col.names = c("", "", "Speaker", "Title", "Abstract")) %>%
+  kable_classic("striped")
+```
+
+## (Aloha) Friday
+
+```{r vendredi, echo = FALSE}
+vendredi <- data.frame(creneau = c("9h-9h30", "9h30-10h", 
+                                "10h-10h30", "10h30-11h",  
+                                "11h-12h"),
+                    talk_type = c("Contributed talk", "Contributed talk",
+                                  "Contributed talk", "Break",
+                                  "Prize session and closing"),
+                    Speaker = c("TBA", "TBA", "TBA",
+                                "", ""),
+                    Title = c("To be announced"),
+                    Abstract = c("[Disponible ici](https://media1.tenor.com/images/618c6321f547133ca86ae55276c915d7/tenor.gif?itemid=15763066)"))
+vendredi %>%  
+    mutate(talk_type = cell_spec(
+      talk_type, color = "white", bold = T,
+      background = get_color(talk_type)
+    )) %>% 
+  kableExtra::kbl(escape = FALSE,
+             col.names = c("", "", "Speaker", "Title", "Abstract")) %>%
+  kable_classic("striped")
+```
+
