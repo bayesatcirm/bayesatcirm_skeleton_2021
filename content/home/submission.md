@@ -50,7 +50,6 @@ subtitle = ""
  css_class = ""
 +++
 
-The abstract submission procedure is [done here](www.blabliblablo.com).
+The registration and/or abstract submission is [done here](https://docs.google.com/forms/d/1ODToqzASgutwEM1XyQc2LX4LrSDPq1MlkPoBGQw355Y/).
 
-The registration procedure is [done here](www.blabliblablo.com).
 

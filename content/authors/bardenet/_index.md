@@ -7,7 +7,7 @@ email: ""
 organizations:
 - name: Laboratoire Mathématique d'Orsay
   url: ""
-role: CNRS junior permanent researcher
+role: CNRS permanent researcher
 superuser: false
 title: Rémi Bardenet
 user_groups:
