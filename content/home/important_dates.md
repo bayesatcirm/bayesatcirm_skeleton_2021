@@ -53,4 +53,4 @@ subtitle = ""
 - **Call for contribution:**  December 2020
 - **Abstract submission deadline:**  March 15, 2021
 - **Acceptance notification:**  April 15, 2021
-- **Deadline for the inscription:**  June 15, 2020
+- **Deadline for the inscription:**  June 15, 2021
