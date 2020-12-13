@@ -7,9 +7,9 @@ authors:
 # - Artificial intelligence
 email: ""
 organizations:
-- name: Applied Mathematics Center, Ecole Polytechnique
+- name: Institut Polytechnique de Paris
   url: ""
-role: Professor at Ecole Polytechnique
+role: Professor
 superuser: false
 title: Eric Moulines
 user_groups:

@@ -7,9 +7,9 @@ authors:
 # - Artificial intelligence
 email: ""
 organizations:
-- name: Applied Mathematics Center, Ecole Polytechnique
+- name: University of Warwick
   url: ""
-role: Professor at the University of Warwick
+role: Professor
 superuser: false
 title: Gareth Roberts
 user_groups:

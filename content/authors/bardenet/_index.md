@@ -5,9 +5,9 @@ authors:
 #   matter.
 email: ""
 organizations:
-- name: Laboratoire Mathématique d'Orsay
+- name: CNRS (French National Committee for Scientific Research), Lille
   url: ""
-role: CNRS permanent researcher
+role: Researcher
 superuser: false
 title: Rémi Bardenet
 user_groups:

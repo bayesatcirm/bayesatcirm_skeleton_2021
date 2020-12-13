@@ -50,6 +50,6 @@ subtitle = ""
  css_class = ""
 +++
 
-The registration and/or abstract submission is [done here](https://docs.google.com/forms/d/1ODToqzASgutwEM1XyQc2LX4LrSDPq1MlkPoBGQw355Y/).
+To apply for the conference (and, potentially, submit an abstract),  [click here](https://docs.google.com/forms/d/1ODToqzASgutwEM1XyQc2LX4LrSDPq1MlkPoBGQw355Y/).
 
 

@@ -7,9 +7,9 @@ authors:
 # - Artificial intelligence
 email: ""
 organizations:
-- name: Laboratoire Mathématique d'Orsay
+- name: Université Paris-Saclay
   url: ""
-role: Professor at Université Paris-Saclay
+role: Professor
 superuser: false
 title: Elisabeth Gassiat
 user_groups:

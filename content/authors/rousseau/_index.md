@@ -7,9 +7,9 @@ authors:
 # - Artificial intelligence
 email: ""
 organizations:
-- name: Applied Mathematics Center, Ecole Polytechnique
+- name: University of Oxford
   url: ""
-role: Professor at the University of Oxford
+role: Professor
 superuser: false
 title: Judith Rousseau
 user_groups:

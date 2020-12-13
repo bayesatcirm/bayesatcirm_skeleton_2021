@@ -7,9 +7,9 @@ authors:
 # - Artificial intelligence
 email: ""
 organizations:
-- name: Applied Mathematics Center, Ecole Polytechnique
+- name: University of Bristol
   url: ""
-role: Associate Professor at University of Bristol
+role: Associate Professor
 superuser: false
 title: Anthony Lee
 user_groups:

@@ -7,9 +7,9 @@ authors:
 # - Artificial intelligence
 email: ""
 organizations:
-- name: Applied Mathematics Center, Ecole Polytechnique
+- name: INRIA (National Institute for Research in Digital Science and Technology), Grenoble
   url: ""
-role: Senior Researcher at INRIA 
+role: Senior Researcher
 superuser: false
 title: Florence Forbes
 user_groups:
