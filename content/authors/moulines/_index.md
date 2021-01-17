@@ -9,7 +9,7 @@ email: ""
 organizations:
 - name: Institut Polytechnique de Paris
   url: ""
-role: Professor
+role: Professor at Ecole Polytechnique
 superuser: false
 title: Eric Moulines
 user_groups:

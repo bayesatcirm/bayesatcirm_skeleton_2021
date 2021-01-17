@@ -7,7 +7,7 @@ email: ""
 organizations:
 - name: CNRS (French National Committee for Scientific Research), Lille
   url: ""
-role: Researcher
+role: Researcher at CNRS
 superuser: false
 title: Rémi Bardenet
 user_groups:

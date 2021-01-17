@@ -9,7 +9,7 @@ email: ""
 organizations:
 - name: University of Warwick
   url: ""
-role: Professor
+role: Professor at University of Warwick
 superuser: false
 title: Gareth Roberts
 user_groups:

@@ -9,7 +9,7 @@ email: ""
 organizations:
 - name: INRIA (National Institute for Research in Digital Science and Technology), Grenoble
   url: ""
-role: Senior Researcher
+role: Senior Researcher at INRIA
 superuser: false
 title: Florence Forbes
 user_groups:

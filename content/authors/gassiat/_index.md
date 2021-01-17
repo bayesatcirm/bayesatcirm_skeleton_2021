@@ -9,7 +9,7 @@ email: ""
 organizations:
 - name: Université Paris-Saclay
   url: ""
-role: Professor
+role: Professor at Université Paris-Saclay
 superuser: false
 title: Elisabeth Gassiat
 user_groups:

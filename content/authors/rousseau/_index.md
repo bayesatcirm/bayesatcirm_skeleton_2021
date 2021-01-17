@@ -9,7 +9,7 @@ email: ""
 organizations:
 - name: University of Oxford
   url: ""
-role: Professor
+role: Professor at University of Oxford
 superuser: false
 title: Judith Rousseau
 user_groups:

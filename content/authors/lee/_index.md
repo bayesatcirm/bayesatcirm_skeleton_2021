@@ -9,7 +9,7 @@ email: ""
 organizations:
 - name: University of Bristol
   url: ""
-role: Associate Professor
+role: Associate Professor at University of Bristol
 superuser: false
 title: Anthony Lee
 user_groups:
