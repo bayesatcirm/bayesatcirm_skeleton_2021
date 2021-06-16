@@ -31,7 +31,7 @@ get_color <- function(vec){
 ## (It's got to be) Monday
 
 ```{r tableau_lundi, message = FALSE, eval = TRUE, echo = FALSE}
-lundi <- data.frame(creneau = c("9h-10h30", "10h30-11h", 
+lundi <- tibble(creneau = c("9h-10h30", "10h30-11h", 
                                 "11h-11h30", "11h30-12h",  
                                 "12h30-14h", "14h-15h", 
                                 "15h-15h30", "15h30-16h",
@@ -41,13 +41,10 @@ lundi <- data.frame(creneau = c("9h-10h30", "10h30-11h",
                              "Break", "Invited talk",
                              "Contributed talk", "Contributed talk",
                              "Break", "Invited talk"),
-                    Speaker = c("TBA", "",
-                                "TBA", "TBA",
-                                "", "TBA",
-                                "TBA", "TBA",
-                                "", "TBA"),
-                    Title = c("To be announced"),
-                    Abstract = c("[Disponible ici](https://media1.tenor.com/images/618c6321f547133ca86ae55276c915d7/tenor.gif?itemid=15763066)"))
+                    Speaker = ifelse(talk_type == "Break","", "To be announced"),
+                    Title = ifelse(talk_type == "Break","", "TBA"),
+                    Abstract = ifelse(talk_type == "Break", "", 
+                    "[Disponible ici](https://media1.tenor.com/images/618c6321f547133ca86ae55276c915d7/tenor.gif?itemid=15763066)"))
 lundi %>%  
     mutate(talk_type = cell_spec(
       talk_type, color = "white", bold = T,
@@ -55,7 +52,7 @@ lundi %>%
     )) %>% 
   kableExtra::kbl(escape = FALSE,
              col.names = c("", "", "Speaker", "Title", "Abstract")) %>%
-  kable_classic("striped")
+  kableExtra::kable_classic("striped")
 ```
 
 ## (Hooray for) Tuesday 
@@ -75,8 +72,8 @@ mardi %>%
 ## (Waiting for) Wednesday
 
 ```{r mercredi, echo = FALSE}
-mercredi <- lundi
-mercredi %>%  
+mercredi <- slice(lundi, 1:4)
+mercredi %>% 
     mutate(talk_type = cell_spec(
       talk_type, color = "white", bold = T,
       background = get_color(talk_type)
