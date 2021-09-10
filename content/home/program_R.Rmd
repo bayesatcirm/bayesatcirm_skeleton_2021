@@ -45,7 +45,15 @@ print_function <- function(df){
 ## (It's got to be) Monday
 
 ```{r full_program, eval = TRUE, echo=FALSE, message=FALSE}
-full_program <- read.csv("detailed_program.csv", sep = ";", header = TRUE)
+full_program <- read.csv("detailed_program.csv", sep = ";", header = TRUE) %>% 
+  mutate(last_name = ifelse(Speaker == "", "",
+                            strsplit(Speaker, split = " ") %>% 
+           map(2) %>%
+           tolower() %>% 
+           paste0("(abstracts/", ., ".html)")),
+         Title = ifelse(Title == "", "",
+                        paste0("[", Title, "]", last_name))) %>% 
+  dplyr::select(-last_name)
 ```
 
 
