@@ -66,7 +66,7 @@ print_function(lundi)
 ## (Hooray for) Tuesday 
 
 ```{r mardi, echo = FALSE}
-mardi <- filter(full_program, Day == "Thursday")
+mardi <- filter(full_program, Day == "Tuesday")
 print_function(mardi)
 ```
 
@@ -81,7 +81,7 @@ print_function(mercredi)
 
 ```{r jeudi, echo = FALSE}
 jeudi <- filter(full_program, Day == "Thursday")
-print_function(mercredi)
+print_function(jeudi)
 ```
 
 ## (Aloha) Friday
