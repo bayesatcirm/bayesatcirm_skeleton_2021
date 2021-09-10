@@ -13,110 +13,72 @@ weight: 30
 ```{r utils, echo = FALSE, message = FALSE}
 library(tidyverse)
 library(kableExtra)
-my_palette <- spec_color(1:4, end = 0.9, option = "A", direction = -1)
+# my_palette <- spec_color(1:5, end = 0.9, option = "A", direction = -1)
+my_palette <- wesanderson::wes_palette("Darjeeling1", type = "discrete")
 get_color <- function(vec){
-  sapply(vec, function(x) 
-    if(x == "Master Class")
+  map_chr(vec, function(x) 
+    if(x %in% c("Coffee break", "Snooze time", "Diner", "Lunch"))
       return(my_palette[1])
     else if(x == "Invited talk")
       return(my_palette[2])
-    else if(x == "Break")
+    else if(x == "Contributed")
+      return(my_palette[3])
+    else if(x == "Master Class")
       return(my_palette[4])
     else
-      return(my_palette[3]))
+      return(my_palette[5]))
+}
+print_function <- function(df){
+  df %>% 
+    dplyr::select(-Day) %>% 
+    mutate(talk_type = cell_spec(
+      talk_type, color = "white", bold = T,
+      background = get_color(talk_type)
+    )) %>% 
+  kableExtra::kbl(escape = FALSE,
+             col.names = c("", "", "Speaker", "Title")) %>%
+  kableExtra::kable_classic("striped")
 }
 ```
 
 
 ## (It's got to be) Monday
 
-```{r tableau_lundi, message = FALSE, eval = TRUE, echo = FALSE}
-lundi <- tibble(creneau = c("9h-10h30", "10h30-11h", 
-                                "11h-11h30", "11h30-12h",  
-                                "12h30-14h", "14h-15h", 
-                                "15h-15h30", "15h30-16h",
-                                "16h-16h30", "17h-17h30"),
-                    talk_type = c("Master Class", "Break", 
-                             "Contributed talk", "Contributed talk",
-                             "Break", "Invited talk",
-                             "Contributed talk", "Contributed talk",
-                             "Break", "Invited talk"),
-                    Speaker = ifelse(talk_type == "Break","", "To be announced"),
-                    Title = ifelse(talk_type == "Break","", "TBA"),
-                    Abstract = ifelse(talk_type == "Break", "", 
-                    "[Disponible ici](https://media1.tenor.com/images/618c6321f547133ca86ae55276c915d7/tenor.gif?itemid=15763066)"))
-lundi %>%  
-    mutate(talk_type = cell_spec(
-      talk_type, color = "white", bold = T,
-      background = get_color(talk_type)
-    )) %>% 
-  kableExtra::kbl(escape = FALSE,
-             col.names = c("", "", "Speaker", "Title", "Abstract")) %>%
-  kableExtra::kable_classic("striped")
+```{r full_program, eval = TRUE, echo=FALSE, message=FALSE}
+full_program <- read.csv("detailed_program.csv", sep = ";", header = TRUE)
 ```
+
+
+```{r tableau_lundi, message = FALSE, eval = TRUE, echo = FALSE}
+lundi <- filter(full_program, Day == "Monday")
+print_function(lundi)
+```
+
 
 ## (Hooray for) Tuesday 
 
 ```{r mardi, echo = FALSE}
-mardi <- lundi
-mardi %>%  
-    mutate(talk_type = cell_spec(
-      talk_type, color = "white", bold = T,
-      background = get_color(talk_type)
-    )) %>% 
-  kableExtra::kbl(escape = FALSE,
-             col.names = c("", "", "Speaker", "Title", "Abstract")) %>%
-  kable_classic("striped")
+mardi <- filter(full_program, Day == "Thursday")
+print_function(mardi)
 ```
 
 ## (Waiting for) Wednesday
 
 ```{r mercredi, echo = FALSE}
-mercredi <- slice(lundi, 1:4)
-mercredi %>% 
-    mutate(talk_type = cell_spec(
-      talk_type, color = "white", bold = T,
-      background = get_color(talk_type)
-    )) %>% 
-  kableExtra::kbl(escape = FALSE,
-             col.names = c("", "", "Speaker", "Title", "Abstract")) %>%
-  kable_classic("striped")
+mercredi <- filter(full_program, Day == "Wednesday")
+print_function(mercredi)
 ```
 
 ## (Sweet) Thursday
 
 ```{r jeudi, echo = FALSE}
-jeudi <- lundi
-jeudi %>%  
-    mutate(talk_type = cell_spec(
-      talk_type, color = "white", bold = T,
-      background = get_color(talk_type)
-    )) %>% 
-  kableExtra::kbl(escape = FALSE,
-             col.names = c("", "", "Speaker", "Title", "Abstract")) %>%
-  kable_classic("striped")
+jeudi <- filter(full_program, Day == "Thursday")
+print_function(mercredi)
 ```
 
 ## (Aloha) Friday
 
 ```{r vendredi, echo = FALSE}
-vendredi <- data.frame(creneau = c("9h-9h30", "9h30-10h", 
-                                "10h-10h30", "10h30-11h",  
-                                "11h-12h"),
-                    talk_type = c("Contributed talk", "Contributed talk",
-                                  "Contributed talk", "Break",
-                                  "Prize session and closing"),
-                    Speaker = c("TBA", "TBA", "TBA",
-                                "", ""),
-                    Title = c("To be announced"),
-                    Abstract = c("[Disponible ici](https://media1.tenor.com/images/618c6321f547133ca86ae55276c915d7/tenor.gif?itemid=15763066)"))
-vendredi %>%  
-    mutate(talk_type = cell_spec(
-      talk_type, color = "white", bold = T,
-      background = get_color(talk_type)
-    )) %>% 
-  kableExtra::kbl(escape = FALSE,
-             col.names = c("", "", "Speaker", "Title", "Abstract")) %>%
-  kable_classic("striped")
+vendredi <- filter(full_program, Day == "Friday")
+print_function(vendredi)
 ```
-
