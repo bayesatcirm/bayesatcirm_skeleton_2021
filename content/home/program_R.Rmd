@@ -7,6 +7,8 @@ active: true
 weight: 30
 # subtitle: Définition et simulation avec R
 # linktitle: MB
+editor_options: 
+  chunk_output_type: console
 ---
 
 
@@ -45,7 +47,7 @@ print_function <- function(df){
 ## (It's got to be) Monday
 
 ```{r full_program, eval = TRUE, echo=FALSE, message=FALSE}
-full_program <- read.csv("detailed_program.csv", sep = ";", header = TRUE) %>% 
+full_program <- read.csv("detailed_program.csv", sep = ",", header = TRUE) %>% 
   mutate(last_name = ifelse(Speaker == "", "",
                             strsplit(Speaker, split = " ") %>% 
            map(2) %>%
