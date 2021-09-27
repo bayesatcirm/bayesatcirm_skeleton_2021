@@ -1,6 +1,6 @@
 ---
 title: "Subgeometric hypocoercivity for piecewise-deterministic Markov process Monte Carlo methods"
-author: "Marina Riabiz"
+author: "Andi Wang"
 date: ""
 output: 
   html_document:
