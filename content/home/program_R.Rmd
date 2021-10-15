@@ -21,7 +21,7 @@ get_color <- function(vec){
   map_chr(vec, function(x) 
     if(x %in% c("Coffee break", "Snooze time", "Diner", "Lunch"))
       return(my_palette[1])
-    else if(x == "Invited talk")
+    else if(x %in% c("Invited talk", "Practical session"))
       return(my_palette[2])
     else if(x == "Contributed")
       return(my_palette[3])
@@ -43,6 +43,7 @@ print_function <- function(df){
 }
 ```
 
+The fully detailed program, containing also the abstracts of the poster session, is available [here](home/full_abstracts.pdf) in the `pdf` format.
 
 ## (It's got to be) Monday
 
@@ -56,7 +57,7 @@ full_program <- read.csv("detailed_program.csv", sep = ",", header = TRUE) %>%
          Title = ifelse(Title == "", "",
                         paste0("[", Title, "]", last_name))) %>% 
   dplyr::select(-last_name) %>% 
-  filter(talk_type %in% c("Introduction", "Master Class", "Contributed", "Invited talk", "Poster session", "Speed mentoring", "Social event", "Closing"))
+  filter(talk_type %in% c("Introduction", "Master Class", "Contributed", "Invited talk", "Poster session", "Practical session", "Speed mentoring", "Social event", "Closing"))
 ```
 
 
