@@ -18,13 +18,12 @@ Tuesday,11:00-11:30,Contributed,Takuo Matsubara,Robust generalised bayesian infe
 Tuesday,11:30-12:00,Contributed,Deborah Sulem,Bayesian estimation of nonlinear Hawkes process
 Tuesday,12:00-12:30,Contributed,Torben Sell,Dimension-robust function space priors for stochastic control
 Tuesday,12:30-14:00,Lunch,,
-Tuesday,14:00-15:00,Invited talk,Florence Forbes,Simulation-based Bayesian inference for high dimensional inverse problems
-Tuesday,15:00-15:30,Coffee break,,
-Tuesday,15:30-16:30,Invited talk,Eric Moulines,TBA
-Tuesday,16:30-17:00,Snooze time,,
+Tuesday,14:00-15:30,Master Class,Elisabeth Gassiat,Bayesian multiple testing for dependent data and hidden Markov models
+Tuesday,15:30-16:00,Coffee break,,
+Tuesday,16:00-17:00,Invited talk,Florence Forbes,Simulation-based Bayesian inference for high dimensional inverse problems
 Tuesday,17:00-19:30,Speed Mentoring,,
 Tuesday,19:30-21:00,Diner,,
-Wednesday,9:00-10:30,Master Class,Elisabeth Gassiat,Bayesian multiple testing for dependent data and hidden Markov models
+Wednesday,9:30-10:30,Invited talk,Eric Moulines,TBA
 Wednesday,10:30-11:00,Coffee break,,
 Wednesday,11:00-11:30,Contributed,Bart Eggen,Bayesian senstivity analysis for a missing data model with continuous outcomes
 Wednesday,11:30-12:00,Contributed,Gonzalo Mena,On the choice of priors for the estimation of infection fatality rates in the absence of serological data
@@ -36,7 +35,6 @@ Thursday,9:00-10:30,Master Class,Elisabeth Gassiat,Bayesian multiple testing for
 Thursday,10:30-11:00,Coffee break,,
 Thursday,11:00-11:30,Contributed,Amani Alahmadi,SMC ABC estimator for ODE models
 Thursday,11:30-12:00,Contributed,Luke Kelly,Coupled MCMC for Bayesian phylogenetic inference
-Thursday,12:00-12:30,Contributed,Benjamin Guedj,Dichotomize and generalize : PAC-Bayesian binary activated deep neural networks
 Thursday,12:30-14:00,Lunch,,
 Thursday,14:00-15:00,Invited talk,Gareth Roberts,Regenerative non-reversible MCMC and the Restore algorithm
 Thursday,15:00-15:30,Coffee break,,
