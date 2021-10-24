@@ -24,7 +24,7 @@
   weight = 30
 
 [[main]]
-  name = "Application/Abstract submission"
+  name = "Social events"
   url = "#submission"
   weight = 40
   

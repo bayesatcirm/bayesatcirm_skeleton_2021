@@ -8,7 +8,7 @@ headless = false  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
-title = "Application/abstract submission"
+title = "Social events"
 subtitle = ""
 
 [design]
@@ -50,4 +50,8 @@ subtitle = ""
  css_class = ""
 +++
 
-Applications are now closed!
+To register for the ping pong tournament, click [here](https://docs.google.com/forms/d/e/1FAIpQLSfSYLV_-eHSWtgVdv7HJSmxTkF7tqeaXNWP3qmAOm_oEfrVRA/viewform?usp=sf_link). 
+
+It will be a double tournament, you're partner will be randomly (with importance weights!) chosen.
+
+The tournament will start on Tuesday! 
