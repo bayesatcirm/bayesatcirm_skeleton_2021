@@ -8,7 +8,7 @@ headless = false  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
-title = "Important dates"
+title = "Poster session"
 subtitle = ""
 
 [design]
@@ -50,7 +50,4 @@ subtitle = ""
  css_class = ""
 +++
 
-- **Call for contribution:**  December 2020
-- **Abstract submission deadline:**  March 15, 2021
-- **Acceptance notification:**  April 15, 2021
-- **Deadline for the inscription:**  June 15, 2021
+Vote for your favorite poster [here](https://docs.google.com/forms/d/e/1FAIpQLSctFQIocGeZX6GDzFKhYA39vfdaaO3IIAetO5PEbSCxGAlfWA/viewform?usp=sf_link)!

@@ -29,7 +29,7 @@
   weight = 40
   
 [[main]]
-  name = "Important dates"
+  name = "Poster session"
   url = "#important_dates"
   weight = 50
 
