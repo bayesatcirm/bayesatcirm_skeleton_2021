@@ -33,10 +33,10 @@ Wednesday,12:00-12:30,Contributed,Solon Karapanagiotis,Tailored Bayes: a risk mo
 Wednesday,12:30-14:00,Lunch,,
 Wednesday,14:00-19:30,Social event,,
 Wednesday,19:30-21:00,Diner,,
-Thursday,9:00-10:30,Master Class,Elisabeth Gassiat,Bayesian multiple testing for dependent data and hidden Markov models
-Thursday,10:30-11:00,Coffee break,,
-Thursday,11:00-11:30,Contributed,Amani Alahmadi,SMC ABC estimator for ODE models
-Thursday,11:30-12:00,Contributed,Luke Kelly,Coupled MCMC for Bayesian phylogenetic inference
+Thursday,9:30-11:00,Master Class,Elisabeth Gassiat,Bayesian multiple testing for dependent data and hidden Markov models
+Thursday,11:00-11:30,Coffee break,,
+Thursday,11:30-12:00,Contributed,Amani Alahmadi,SMC ABC estimator for ODE models
+Thursday,12:00-12:30,Contributed,Luke Kelly,Coupled MCMC for Bayesian phylogenetic inference
 Thursday,12:30-14:00,Lunch,,
 Thursday,14:00-15:00,Invited talk,Gareth Roberts,Regenerative non-reversible MCMC and the Restore algorithm
 Thursday,15:00-15:30,Coffee break,,
@@ -44,10 +44,10 @@ Thursday,15:30-17:30,Practical session,Charles Ollion,Introduction to Bayesian d
 Thursday,17:30-18:00,Snooze time,,
 Thursday,18:00-19:30,Social event,,
 Thursday,19:30-21:00,Diner,,
-Friday,9:00-9:30,Contributed,Sebastiano Grazzi,Sticky PDMP samplers for sparce and local inference problems
-Friday,9:30-10:00,Contributed,Andrea Bertazzi,Approximations of PDMP and their convergence properties
-Friday,10:00-10:30,Contributed,Andi Wang,Subgeometric hypocoercivity for PDMP
-Friday,10:30-11:00,Coffee break,,
-Friday,11:00-12:00,Invited talk,Randal Douc,The Kick Kac teleportation algorithm : boost your favorite MCMC using Kac formula
-Friday,12:00-12:30,Closing,,
+Friday,9:15-9:45,Contributed,Sebastiano Grazzi,Sticky PDMP samplers for sparce and local inference problems
+Friday,9:45-10:15,Contributed,Andrea Bertazzi,Approximations of PDMP and their convergence properties
+Friday,10:15-10:45,Contributed,Andi Wang,Subgeometric hypocoercivity for PDMP
+Friday,10:45-11:15,Coffee break,,
+Friday,11:15-12:15,Invited talk,Randal Douc,The Kick Kac teleportation algorithm : boost your favorite MCMC using Kac formula
+Friday,12:15-12:30,Closing,,
 Friday,12:30-14:00,Lunch,,
