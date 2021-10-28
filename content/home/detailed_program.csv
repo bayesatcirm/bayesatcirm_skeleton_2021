@@ -40,14 +40,13 @@ Thursday,12:00-12:30,Contributed,Luke Kelly,Coupled MCMC for Bayesian phylogenet
 Thursday,12:30-14:00,Lunch,,
 Thursday,14:00-15:00,Invited talk,Gareth Roberts,Regenerative non-reversible MCMC and the Restore algorithm
 Thursday,15:00-15:30,Coffee break,,
-Thursday,15:30-17:30,Practical session,Charles Ollion,Introduction to Bayesian deep learning
+Thursday,15:30-16:30,Invited talk,Randal Douc,The Kick Kac teleportation algorithm : boost your favorite MCMC using Kac formula
 Thursday,17:30-18:00,Snooze time,,
 Thursday,18:00-19:30,Social event,,
 Thursday,19:30-21:00,Diner,,
-Friday,9:15-9:45,Contributed,Sebastiano Grazzi,Sticky PDMP samplers for sparce and local inference problems
-Friday,9:45-10:15,Contributed,Andrea Bertazzi,Approximations of PDMP and their convergence properties
-Friday,10:15-10:45,Contributed,Andi Wang,Subgeometric hypocoercivity for PDMP
+Friday,9:30-10:00,Contributed,Sebastiano Grazzi,Sticky PDMP samplers for sparce and local inference problems
+Friday,10:00-10:30,Contributed,Andrea Bertazzi,Approximations of PDMP and their convergence properties
+Friday,10:30-11:00,Contributed,Andi Wang,Subgeometric hypocoercivity for PDMP
 Friday,10:45-11:15,Coffee break,,
-Friday,11:15-12:15,Invited talk,Randal Douc,The Kick Kac teleportation algorithm : boost your favorite MCMC using Kac formula
-Friday,12:15-12:30,Closing,,
+Friday,11:00-11:30,Closing,,
 Friday,12:30-14:00,Lunch,,
